@@ -220,13 +220,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 
 <div class="acts">
-
-  <button class="btn bno" onclick="window.print()">&#128438; 1&ordm; Salvar as Respostas (PDF)</button>
-
-    <button class="btn bnn" onclick="var email=prompt('Para qual e-mail a Data Secure® deve enviar o seu diagnóstico formatado?'); if(email){var cart=document.getElementById('f1').value||'Não informado'; window.location.href='https://wa.me/5527998808929?text=Olá, Euzilanea! Solicito o envio do meu diagnóstico detalhado para o e-mail: '+email+'.%0A%0AServentia: '+cart+'.%0A%0A(Já salvei o PDF com as minhas respostas, posso te enviar por aqui?)';}">&#9993; 2&ordm; Solicitar Resultado (WhatsApp)</button>
-
-    <button class="btn bno" onclick="resetAll()">&#8634; Limpar respostas</button>
-
+  <button class="btn bnn" style="background:#25d366;color:#fff;border:none;font-weight:700;font-size:14px;padding:10px 20px;" onclick="var cart=document.getElementById('f1').value||'Não informado'; window.location.href='https://wa.me/5527998808929?text=Olá, Euzilanea! Concluí o preenchimento do Diagnóstico Preliminar (Provimento CNJ 213/2026) no site.%0A%0AServentia: '+cart+'%0A%0AGostaria de solicitar a minha avaliação e entender os próximos passos.';">&#128242; Solicitar Resultado via WhatsApp</button>
+  
+  <button class="btn bnn" onclick="goSum()">&#128203; Ver N&atilde;o Conformidades</button>
+  <button class="btn bno" onclick="resetAll()">&#8634; Limpar respostas</button>
 </div>
 
 <div id="blocks"></div>
