@@ -220,9 +220,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 
 <div class="acts">
-  <button class="btn bno" onclick="window.location.href='mailto:euzilanea.miotto@datasecure.seg.br?subject=Solicita%C3%A7%C3%A3o%20de%20Impress%C3%A3o%20%E2%80%93%20Diagn%C3%B3stico%20Documental%20%7C%20Provimento%20CNJ%20213%2F2026&body=Ol%C3%A1%20Euzilanea%2C%0A%0ASolicito%20a%20impress%C3%A3o%20do%20Diagn%C3%B3stico%20Documental%20preenchido%20referente%20ao%20Provimento%20CNJ%20213%2F2026.%0A%0ADados%20da%20Serventia%3A%0A-%20Nome%3A%20%5Bpreencha%5D%0A-%20Delegat%C3%A1rio%3A%20%5Bpreencha%5D%0A-%20Classe%3A%20%5Bpreencha%5D%0A%0AAguardo%20retorno%20para%20combinarmos%20o%20envio%20do%20documento%20impresso.%0A%0AAtenciosamente%2C'">&#9993; Solicitar Impress&atilde;o</button>
-  <button class="btn bno" onclick="resetAll()">&#8634; Limpar respostas</button>
-  <button class="btn bnn" onclick="goSum()">&#128203; Ver N&atilde;o Conformidades</button>
+
+  <button class="btn bno" onclick="window.print()">&#128438; 1&ordm; Salvar as Respostas (PDF)</button>
+
+    <button class="btn bnn" onclick="var email=prompt('Para qual e-mail a Data Secure® deve enviar o seu diagnóstico formatado?'); if(email){var cart=document.getElementById('f1').value||'Não informado'; window.location.href='https://wa.me/5527998808929?text=Olá, Euzilanea! Solicito o envio do meu diagnóstico detalhado para o e-mail: '+email+'.%0A%0AServentia: '+cart+'.%0A%0A(Já salvei o PDF com as minhas respostas, posso te enviar por aqui?)';}">&#9993; 2&ordm; Solicitar Resultado (WhatsApp)</button>
+
+    <button class="btn bno" onclick="resetAll()">&#8634; Limpar respostas</button>
+
 </div>
 
 <div id="blocks"></div>
